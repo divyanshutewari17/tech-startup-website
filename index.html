@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" type="image/x-icon"/>
+    <title>Tech Startup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo" role="banner">
+                <img src="logo.png" alt="Tech Startup Logo">
+            </div>
+            <nav class="nav" role="navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Welcome to Tech Startup</h1>
+            <p>Your solution to innovative tech services</p>
+            <button class="cta">Get Started</button>
+        </div>
+    </section>
+    
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We provide innovative tech solutions to all our clients with team of quality developers</p>
+        </div>
+    </section>
+    
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Arificial Intelligence Solutions</li>
+                <li>Website Development</li>
+                <li>Mobile App Development</li>
+                <li>Devops solutions</li>
+                <li>Data Analytics</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: info@techstartup.com</p>
+            <p>Phone: +1234567890</p>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="social">
+                <a href="https://twitter.com" aria-label="Twitter">Twitter</a>
+                <a href="https://facebook.com" aria-label="Facebook">Facebook</a>
+                <a href="https://linkedin.com" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+            <div class="address">
+                <p>Address: Sector 56, Gurugram Pincode: 122001, Haryana, India</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script>
+        const header = document.querySelector('.header');
+        function toggleHeaderShadow() {
+            if (window.scrollY > 0) {
+                header.classList.add('box-shadow');
+            } else {
+                header.classList.remove('box-shadow');
+            }
+        }
+        window.addEventListener('scroll', toggleHeaderShadow);
+    </script>
+</body>
+</html>
